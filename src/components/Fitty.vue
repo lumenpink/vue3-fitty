@@ -23,8 +23,7 @@ export default defineComponent({
   },
   mounted() {
     this.$nextTick(() => {
-      const fittyInstance = fitty("#" + this.contentID, this.options);
-      console.log(fittyInstance);
+      fitty("#" + this.contentID, this.options);
     });
   },
   name: "fitty",

@@ -1,5 +1,5 @@
 import Fitty from "./Fitty.vue";
-import { DefineComponent, Plugin } from "vue";
+import { Plugin } from "vue";
 
 const plugin: Plugin = {
   install(app) {

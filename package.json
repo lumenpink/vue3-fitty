@@ -1,18 +1,17 @@
 {
   "name": "vue3-fitty",
   "version": "0.1.0",
-  "private": true,
   "main": "./dist/vue-fitty.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
     "service-help": "vue-cli-service help",
     "inspect": "vue-cli-service inspect",
-    "build-bundle": "vue-cli-service build --target lib --name vue3-fitty ./src/components/index.ts && cp index.d.ts dist"
+    "build": "vue-cli-service build --target lib --name vue3-fitty ./src/components/index.ts && cp index.d.ts dist"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lohn/vue3-fitty.git"
+    "url": "git+https://github.com/lohn/vue3-fitty.git"
   },
   "files": [
     "dist/*",
@@ -22,7 +21,6 @@
     "*.js"
   ],
   "dependencies": {
-
     "core-js": "^3.6.5",
     "fitty": "^2.3.3",
     "uuid": "^8.3.2",
@@ -44,5 +42,21 @@
     "eslint-plugin-vue": "^7.0.0",
     "prettier": "^2.2.1",
     "typescript": "~4.1.5"
-  }
+  },
+  "description": "Fitty text wrapper for Vue 3",
+  "bugs": {
+    "url": "https://github.com/lohn/vue3-fitty/issues"
+  },
+  "homepage": "https://github.com/lohn/vue3-fitty#readme",
+  "keywords": [
+    "vue",
+    "vue3",
+    "fitty",
+    "styling",
+    "autosize",
+    "resize",
+    "font"
+  ],
+  "author": "Josemar Lohn <j@lo.hn>",
+  "license": "MIT"
 }
